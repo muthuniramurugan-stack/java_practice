@@ -1,14 +1,16 @@
 package Arrays;
+
 public class average {
-    public static void main(String[]args){
-    int[]arr = {10,20,30,40,50};
-    int sum =0;
-    int avg =0;
-    int count =0;
-    for(int i=0;i<arr.length;i++){
-        sum+=arr[i];
-        count++;
+    public static void main(String[] args) {
+        int[] arr = { 10, 20, 30, 40, 50 };
+        int sum = 0;
+        int avg = 0;
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+            count++;
+        }
+        avg = sum / count;
+        System.out.println(avg);
     }
-    avg = sum/count;
-    System.out.println(avg);
-}}
+}
