@@ -1,14 +1,14 @@
 package Strings;
 
 public class countconsonants {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         String name = "muthumurugan";
-        int count =0;
-        for(int i=0;i<name.length(); i++){
+        int count = 0;
+        for (int i = 0; i < name.length(); i++) {
             char ch = name.charAt(i);
-            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
 
-            }else{
+            } else {
                 count++;
             }
         }
