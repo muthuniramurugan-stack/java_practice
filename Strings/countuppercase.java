@@ -1,17 +1,15 @@
 package Strings;
 
-public class replacespace {
+public class countuppercase {
     public static void main(String[] args) {
         String name = "Hi How Are You";
-        String result = "";
+        int count = 0;
         for (int i = 0; i < name.length(); i++) {
             char ch = name.charAt(i);
-            if (ch != ' ') {
-                result += ch;
-            } else {
-                result += '-';
+            if (ch >= 'A' && ch <= 'Z') {
+                count++;
             }
         }
-        System.out.println(result);
+        System.out.println(count);
     }
 }
