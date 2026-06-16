@@ -7,9 +7,8 @@ public class removeduplicates {
 
         for (int i = 0; i < name.length(); i++) {
             char ch = name.charAt(i);
-
             int j;
-            for (j = 0; j < i; j++) {
+            for ( j = 0; j < i; j++) {
                 if (ch == name.charAt(j)) {
                     break;
                 }
