@@ -3,22 +3,17 @@ package Strings;
 public class removeduplicates {
     public static void main(String[] args) {
         String name = "muthumurugan";
-        String result = "";
-
-        for (int i = 0; i < name.length(); i++) {
+        for(int i=0;i<name.length();i++){
             char ch = name.charAt(i);
-            int j;
-            for ( j = 0; j < i; j++) {
-                if (ch == name.charAt(j)) {
-                    break;
+            int count =0;
+            for(int j=0;j<name.length();j++){
+                if(ch==name.charAt(j)){
+                    count++;
                 }
             }
-
-            if (j == i) {
-                result += ch;
+            if(count==1){
+                System.out.println(ch);
             }
         }
-
-        System.out.println(result);
     }
 }
